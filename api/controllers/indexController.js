@@ -5,4 +5,4 @@ router.get('/', function(req, res, next) {
   res.send('index');
 });
 
-module.exports = router;
+module.exports = app => app.use('/', router);

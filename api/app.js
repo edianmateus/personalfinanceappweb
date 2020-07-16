@@ -6,8 +6,6 @@ const logger = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
-const indexRouter = require('./routes/index');
-
 const app = express();
 
 app.use(logger('dev'));
@@ -17,8 +15,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use('/', indexRouter);
-
+require('./controllers/authController')(app);
+require('./controllers/indexController')(app);
 
 app.use(function(req, res, next) {
   next(createError(404));

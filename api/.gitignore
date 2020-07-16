@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/security
 /.pnp
 .pnp.js
 
