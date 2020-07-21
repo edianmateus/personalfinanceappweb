@@ -1,8 +1,7 @@
 # reacttest
 
+--An App with API using Node.js and Express.
 
--Basic structure created with create react app
+--Front-end using ReactJs.
 
--Implements an API with nodejs express, this will be solutions for backend
-   
--This API i created with npx express-generator, more implementations are comming.....
+--Database using MongoDb Atlas Cloud.
